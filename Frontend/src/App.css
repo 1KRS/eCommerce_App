@@ -1,0 +1,38 @@
+#root {
+    text-align: center;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+
+.top_header {
+    top: 0;
+    display: flex;
+    border-style: solid;
+    border-color: #242424;
+    width: 98%;
+}
+
+.navbar {
+
+}
+
+.product_list {
+    margin: auto;
+}
+
+.login_info {
+    margin: auto;
+}
+
+.categorySorter{
+    height: 50px;
+    margin: auto;
+    border-style: solid;
+    border-color: #242424;
+}
+
+
