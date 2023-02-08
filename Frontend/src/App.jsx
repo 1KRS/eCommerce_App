@@ -18,6 +18,8 @@ import LoginForm from './components/login/LoginForm.jsx';
 import NewUserForm from './components/login/NewUserForm.jsx';
 import SuperAdminPage from "./admin/SuperAdminPage.jsx";
 
+
+
 function addToCart(productId) {
     console.log("Add " + productId + " From the App")
     //add item to the current Cart
@@ -44,14 +46,14 @@ function App() {
                     <NavBar/>
                 </header>
                 <Routes>
-                    <Route exact path='/create-new-user' element={< NewUserForm/>}></Route>
-                    <Route exact path='/login' element={< LoginForm/>}></Route>
+                    <Route exact path='/create-new-user' element={<NewUserForm/>}></Route>
+                    <Route exact path='/login' element={<LoginForm/>}></Route>
                     <Route exact path='/'
-                           element={< ProductList products={fakeProducts} addToCart={addToCart}/>}></Route>
+                           element={<ProductList products={fakeProducts} addToCart={addToCart}/>}></Route>
                     <Route exact path='/cart'
-                           element={< Cart products={currentCart} removeFromCart={removeFromCart}/>}></Route>
-                    <Route exact path='/admin' element={< AdminPage/>}></Route>
-                    <Route exact path='/admin/super' element={< SuperAdminPage/>}></Route>
+                           element={<Cart products={currentCart} removeFromCart={removeFromCart}/>}></Route>
+                    <Route exact path='/admin' element={<AdminPage/>}></Route>
+                    <Route exact path='/admin/super' element={<SuperAdminPage/>}></Route>
                 </Routes>
             </Router>
         </div>
